@@ -1,0 +1,53 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container{
+  border: 3px solid black;
+  display: flex;
+  flex-wrap: wrap;
+  text-align: center;
+}
+
+.box {
+  height: 10rem;
+  /* using flex-grow with flex-basis allows WRAP to happen */
+  /* flex-basis: 10rem;
+  flex-grow: 1; */
+  flex: 1 1 10rem;
+}
+
+.box1 {
+  background-color: rgb(192, 34, 192);
+  order: 1;
+  /* flex: grow shrink basis*/
+  flex: 1 1 10rem;
+}
+
+.box2 {
+  background-color: rgb(207, 51, 51);
+  order: 2;
+
+}
+
+.box3 {
+  background-color: rgb(70, 70, 201);
+  order: 3;
+}
+
+.box4 {
+  background-color: rgb(86, 73, 73);
+  order: 4;
+}
+
+.box5 {
+  background-color: rgb(61, 201, 61);
+  order: 5;
+}
+
+.box6 {
+  background-color: rgb(154, 154, 49);
+  order: 6;
+}

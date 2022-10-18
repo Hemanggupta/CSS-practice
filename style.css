@@ -6,22 +6,31 @@
 }
 
 .container{
-  border: 5px solid black;
+  border: 3px solid black;
   display: flex;
   /* Default flex-direction is "row" */
-  /* flex-direction: row;  */
+  flex-direction: row; 
   /* flex-direction: row-reverse; */
   /* flex-direction: column-reverse; */
   /* flex-direction: column; */
 
   flex-wrap: wrap;
   /* flex-wrap: wrap-reverse; */
+
+  /* justify-content affect child HORIZONTALLY for row. */
+  /* justify-content affect child VERTICALLY for column. */
+
   /* justify-content: space-between; */
   /* justify-content: space-around; */
   justify-content: space-evenly;
+
+  /* align-item affects child VERTICALLY for row.*/
+  /* align-item affects child HORIZONTALLY for column.*/
   align-items: center;
+
+  /* align-content for aligning WRAPING items  */
   align-content: flex-start;
-  height: 40rem;
+  height: 50vh;
 }
 
 .box{
