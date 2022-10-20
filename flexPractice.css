@@ -7,12 +7,11 @@
 a {
   color: black;
   text-decoration: none;
-  ;
 }
 
 nav ul {
   /* width: 70vw;
-  margin: auto;*/
+  margin: auto; */
   /* for limiting nav width */
   display: flex;
   justify-content: space-around;
@@ -25,7 +24,9 @@ nav ul {
 
 nav ul h1 {
   font-size: 2rem;
+  /* text-decoration: underline dotted 10px blue ; */
   font-family: 'Courier New', Courier, monospace;
+  text-align: center;
 }
 
 .hero {
@@ -46,6 +47,7 @@ nav ul h1 {
 }
 
 .hero button {
+  cursor: pointer;
   padding: 1rem 2rem;
   background-color: rgb(72, 148, 246);
   border: none;
