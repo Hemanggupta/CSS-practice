@@ -1,3 +1,4 @@
+/* global style */
 * {
   margin: 0;
   padding: 0;
@@ -8,12 +9,36 @@ html {
   font-size: 62.5%;
 }
 
+body {
+  font-family: 'Poppins', sans-serif;
+  min-width: 420px;
+}
+
 h1 {
   font-size: 2.6rem;
 }
 
 a {
   color: white;
+  text-decoration: none;
+}
+
+button {
+  padding: 2rem 6rem;
+  background: #4c6e97;
+  border: none;
+  color: white;
+  font-size: 1.8rem;
+  cursor: pointer;
+  border-radius: 0.5rem;
+  transition: background 0.3s ease-out;
+  /* transition: property time effect delay; */
+  /* animation: anime 1s infinite alternate; */
+}
+
+button:hover {
+  background: #154581;
+  /* scale: 0.9; */
 }
 
 li,
@@ -30,13 +55,13 @@ h2 {
 
 h3 {
   font-size: 3rem;
+  font-weight: normal;
 }
 
 h4,
 h5 {
   font-size: 2.8rem;
 }
-
 
 /* nav section */
 .main-head {
@@ -45,17 +70,137 @@ h5 {
 }
 
 nav {
-  min-height: 10vh;
   display: flex;
+  flex-wrap: wrap;
+  width: 90%;
+  margin: auto;
+  padding: 2rem;
+  min-height: 10vh;
+  align-items: center;
+}
+
+nav ul {
+  display: flex;
+  flex: 1 1 40rem;
+  flex-wrap: wrap;
+  list-style: none;
+  justify-content: space-around;
+  /* align-items: center; */
+}
+
+#logo {
+  flex: 2 1 25rem;
+  font-family: 'Pattaya', sans-serif;
+  font-size: 3rem;
+  font-weight: normal;
+  /*400*/
+}
+
+.hero {
+  min-height: 90vh;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), transparent), url('/CSS-practice/img/pexels-pixabay-260352.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: initial;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.hero h3 {
+  padding: 5rem;
+}
+
+/* location section */
+
+.location {
+  min-height: 100vh;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), transparent), url("/CSS-practice/img/pexels-william-choquette-1954524.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  color: white;
+  display: flex;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.location-head {
+  z-index: 0;
   width: 90%;
   margin: auto;
 }
 
-nav ul{
-  display: flex;
-  flex: 1 1 40rem;
-  list-style: none;
+.location-head h2 {
+  padding: 0.1rem 0;
+  text-decoration: underline;
+  text-decoration-thickness: 0.3rem;
+  /* Gradient Text, Saas automatically adds prefix */
+  /* webkit is 1 of the prefixes that adds support to browser that normally wouldnt support this feature*/
+  background: -webkit-linear-gradient(#fdfdfd, #4090eb);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
-#logo{
 
+.location-head h3 {
+  padding: 3rem 0;
+  /* Gradient text */
+  background: -webkit-linear-gradient(#ffd000, #00ff40);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.location-head img{
+  z-index: -1;
+  pointer-events: none; 
+  /* cont drag logo/img */
+}
+
+.effect {
+  position: absolute;
+  top: 2rem;
+  left: 2rem;
+  opacity: 0.85;
+  height: 15rem;
+}
+
+.bodybuilder{
+  animation: anime 1.5s ease-in-out;
+}
+
+/* Animation */
+@keyframes anime {
+  from {
+    transform: translate(-100%, -100%);
+  }
+
+  to {
+    transform: translate(0%, 0%);
+  }
+}
+
+/* media query */
+@media screen and (max-width: 800px) {
+
+  html {
+    font-size: 50%;
+  }
+
+  nav {
+    text-align: center;
+  }
+
+  #logo {
+    padding: 1.5rem;
+  }
+    .location-head{
+      background: rgba(19, 28, 39, 0.5);
+      text-align: center;
+    }
 }
