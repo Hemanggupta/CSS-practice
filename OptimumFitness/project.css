@@ -67,6 +67,9 @@ h5 {
 .main-head {
   background-color: #131c27;
   color: white;
+  position: sticky;
+  top: 0;
+  z-index: 1;
 }
 
 nav {
@@ -98,7 +101,7 @@ nav ul {
 
 .hero {
   min-height: 90vh;
-  background: linear-gradient(rgba(0, 0, 0, 0.5), transparent), url('/CSS-practice/img/pexels-pixabay-260352.jpg');
+  background: linear-gradient(rgba(0, 0, 0, 0.5), transparent), url('/-img/pexels-pixabay-260352.jpg');
   background-size: cover;
   background-repeat: no-repeat;
   background-position: initial;
@@ -118,7 +121,7 @@ nav ul {
 
 .location {
   min-height: 100vh;
-  background: linear-gradient(rgba(0, 0, 0, 0.5), transparent), url("/CSS-practice/img/pexels-william-choquette-1954524.jpg");
+  background: linear-gradient(rgba(0, 0, 0, 0.5), transparent), url("/-img/pexels-william-choquette-1954524.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -214,7 +217,7 @@ nav ul {
 
 .card {
   flex: 1 25rem;
-  min-height: 40vh;
+  min-height: 30vh;
   margin: 2rem 5rem;
   text-align: center;
   box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.1), 0px 10px 10px rgba(0, 0, 0, 0.1);
@@ -246,8 +249,8 @@ nav ul {
 /* Contact Us */
 
 #contact {
-  min-height: 100vh;
-  background: linear-gradient(rgba(0, 0, 0, 0.5), transparent), url('/CSS-practice/img/pexels-lukas-669584.jpg');
+  min-height: 80vh;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), transparent), url('/-img/pexels-lukas-669584.jpg');
   background-size: cover;
   background-repeat: no-repeat;
   background-position: initial;
@@ -290,6 +293,41 @@ nav ul {
   text-align: center;
 }
 
+/* FOOTER */
+
+footer{
+  background: rgba(19, 28, 39, 1);
+  color: white;
+}
+
+.footer-wrapper{
+  display: flex;
+  padding: 2rem;
+  width: 90%;
+  margin: auto;
+  align-items: center;
+  /* justify-content: space-between; */
+  min-height: 10vh;
+  flex-wrap: wrap;
+}
+
+footer ul{
+  display: flex;
+  list-style-type: none;
+  flex: 1 1 40rem;
+  justify-content: space-between;
+  align-items: center;
+}
+
+footer h5{
+  flex: 1 1 40rem;
+}
+
+footer img{
+  height: 4rem;
+  filter:invert(1);
+}
+
 /* media query */
 @media screen and (max-width: 800px) {
 
@@ -308,5 +346,15 @@ nav ul {
   .location-head {
     background: rgba(19, 28, 39, 0.5);
     text-align: center;
+  }
+
+  .form-wrapper{
+    width: 100%;
+  }
+  footer{
+    text-align: center;
+  }
+  footer h5{
+    padding-bottom: 3rem;
   }
 }
