@@ -1,0 +1,73 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container{
+  border: 0.5rem solid rgb(0, 0, 0);
+  /* text-align: center; */
+}
+
+.box {
+  padding: 2rem;
+}
+
+.box1 {
+  background-color: rgb(218, 93, 218);
+  grid-area: box1;
+}
+
+.box2 {
+  background-color: rgb(175, 83, 83);
+  grid-area: box2;
+
+}
+
+.box3 {
+  background-color: rgb(91, 91, 196);
+  grid-area: box3;
+
+}
+
+.box4 {
+  background-color: rgb(66, 49, 49);
+  grid-area: box4;
+
+}
+
+.box5 {
+  background-color: rgb(82, 167, 82);
+  grid-area: box5;
+
+}
+
+.container{
+  display: grid;
+  /* grid-template-columns: 1fr 5rem; */
+  /* grid-template-columns: 1fr 1fr 1fr 1fr 1fr; */
+  
+  /* repeat 5 time 1fr */
+  /* grid-template-columns: repeat(5, 1fr); */
+
+  /* % wise */
+  grid-template-columns: 50% 20% 30%;
+
+  /* 50% = 50% hieght of whole height of total rows */
+  /* grid-template-rows: 50% 50%; */
+  /* grid-template-rows: 10rem 50%; */
+
+  /* by default */
+  /* grid-template-rows: auto; */
+
+  /*  " . " for leaving a block*/
+  grid-template-areas:
+  "box3 box1 box2"
+  ". box5 box2"
+
+  /* no effect i.e. cant add whole row of mt blocks */
+  ". box5 box2"  
+  "box4 box4 box4";
+
+
+}
