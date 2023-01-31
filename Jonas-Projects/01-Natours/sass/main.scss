@@ -1,14 +1,15 @@
-@import './abstracts/function';
-@import './abstracts/mixis';
-@import './abstracts/variable';
+@import "./abstracts/function";
+@import "./abstracts/mixis";
+@import "./abstracts/variable";
 
-@import './base/animations';
-@import './base/base';
-@import './base/typography';
-@import './base/utilities';
+@import "./base/animations";
+@import "./base/base";
+@import "./base/typography";
+@import "./base/utilities";
 
-@import './components/button';
+@import "./components/button";
 
-@import './layout/header';
+@import "./layout/float";
+@import "./layout/header";
 
-@import './pages/home';
+@import "./pages/home";
